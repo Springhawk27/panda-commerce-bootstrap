@@ -10,6 +10,8 @@
     <!-- bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom style  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -44,7 +46,7 @@
         </nav>
         <!-- Image Slider -->
 
-        <section class="container py-5 px-0 ">
+        <section class="container py-5 mt-5">
             <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -54,9 +56,9 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner rounded ">
-                    <div class="carousel-item active ">
-                        <div class="row d-flex align-items-center p-5" style="background-color: #FCEAE9;">
+                <div class="carousel-inner primary-bg ">
+                    <div class="carousel-item active">
+                        <div class="row d-flex align-items-center p-5 primary-bg">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone
                                 </h1>
@@ -71,7 +73,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row d-flex align-items-center p-5" style="background-color: #FCEAE9;">
+                        <div class="row d-flex align-items-center p-5 primary-bg">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports
                                 </h1>
@@ -90,7 +92,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row d-flex align-items-center p-5" style="background-color: #FCEAE9;">
+                        <div class="row d-flex align-items-center p-5 primary-bg">
                             <div class="col-lg-7">
                                 <h1>X-Box for your living room
                                 </h1>
@@ -123,27 +125,25 @@
     </header>
 
     <main>
+        <!-- categories -->
         <section class="container my-5">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border rounded bg-warning d-flex align-items-center justify-content-between">
                         <h1>Watch</h1>
-                        <img style="vertical-align: middle; border-style: none; width: 100px; height: 100px;"
-                            src="images/categories/watch.png" alt="">
+                        <img class="cat-img-size" src="images/categories/watch.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border rounded bg-danger d-flex align-items-center justify-content-between">
                         <h1>Bag</h1>
-                        <img style="vertical-align: middle; border-style: none; width: 100px; height: 100px;"
-                            src="images/categories/bag.png" alt="">
+                        <img class="cat-img-size" src="images/categories/bag.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border rounded bg-info d-flex align-items-center justify-content-between">
                         <h1>Shoes</h1>
-                        <img style="vertical-align: middle; border-style: none; width: 100px; height: 100px;"
-                            src="images/categories/shoes.png" alt="">
+                        <img class="cat-img-size" src="images/categories/shoes.png" alt="">
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                             <h5>$120</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -185,7 +185,7 @@
                             <h5>$320</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -204,7 +204,7 @@
                             <h5>$350</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -230,7 +230,7 @@
                             <h5>$120</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -250,7 +250,7 @@
                             <h5>$320</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -269,7 +269,7 @@
                             <h5>$350</h5>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="panda-buy-now-btn">Buy Now</button>
 
                         </div>
 
@@ -278,13 +278,12 @@
             </div>
         </section>
         <!-- subscribe -->
-        <section class="container d-flex justify-content-center align-items-center py-3 mb-5" id="subscribe"
-            style="background-color: #FCEAE9; height: 400px">
+        <section class="container d-flex justify-content-center align-items-center py-3 mb-5 primary-bg" id="subscribe"
+            style="height: 400px">
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
-                <input type="text" placeholder="Your Email">
-                <br>
+                <input class="form-control" type="text" placeholder="Your Email">
                 <button class="btn btn-warning px-3 my-3">Submit</button>
             </div>
         </section>

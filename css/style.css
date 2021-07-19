@@ -1,0 +1,17 @@
+.primary-bg {
+    background-color: #FCEAE9;
+    border-radius: 10px;
+}
+.cat-img-size {
+    vertical-align: middle;
+    border-style: none;
+    width: 100px;
+    height: 100px;
+}
+.panda-buy-now-btn {
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 9px 25px;
+    border: none;
+}
